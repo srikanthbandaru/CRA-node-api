@@ -1,0 +1,41 @@
+{
+  "name": "hindutempleofstlouis-donation-platform",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.3",
+    "express": "^4.16.3",
+    "firebase": "^5.5.2",
+    "node-sass": "^4.9.3",
+    "nodemailer": "^5.1.1",
+    "prettier": "^1.14.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "2.0.1",
+    "react-stripe-elements": "^2.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "format": "prettier --write src/**/*.{js,json,md,scss,css} --config .prettierrc",
+    "eject": "react-scripts eject",
+    "client": "react-scripts start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "proxy": "http://localhost:8000/",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
